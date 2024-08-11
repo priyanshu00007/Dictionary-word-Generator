@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word of the Day</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Word of the Day</h1>
+        <div id="word-container">
+            <p id="word"></p>
+            <p id="meaning"></p>
+        </div>
+        <button id="refresh-btn">Refresh</button>
+        <select id="language-select">
+            <option value="en">English</option>
+            <option value="es">Spanish</option>
+            <option value="fr">French</option>
+        </select>
+        <div id="loading-animation" style="display: none;">
+            <svg width="100" height="100" viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="40" stroke-width="2" stroke="#000" fill="none" stroke-dasharray="100" stroke-dashoffset="0">
+                    <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="2s" repeatCount="indefinite"></animateTransform>
+                </circle>
+            </svg>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
